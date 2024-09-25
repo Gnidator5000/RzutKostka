@@ -9,31 +9,36 @@
             Spacing="25">
             
             <Image
-                Source="dotnet_bot.png"
+                Source="kk10.jpg"
                 HeightRequest="185"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+                x:Name="kosciZDJ"
+                 />
   
             <RadioButton
                 x:Name="kostka4"
                 Content="Rzut Koscia 4oczkowa"
-                Value="4"/>
+                Value="4"
+                CheckedChanged="CheckedChanged"/>
             
             <RadioButton
                 x:Name="kostka6"
                 Content="Rzut Koscia 6oczkowa"
-                Value="6"/>
+                Value="6"
+                CheckedChanged="CheckedChanged"/>
             
             <RadioButton
                 x:Name="kostka10"
                 Content="Rzut Koscia 10oczkowa"
                 Value="10"
-                IsChecked="True"/>
+                IsChecked="True"
+                CheckedChanged="CheckedChanged"/>
             
             <RadioButton
                 x:Name="kostka12"
                 Content="Rzut Koscia 12oczkowa"
-                Value="12"/>
+                Value="12"
+                CheckedChanged="CheckedChanged"/>
 
             <Button
                 x:Name="CounterBtn"

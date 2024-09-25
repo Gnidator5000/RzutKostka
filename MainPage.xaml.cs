@@ -32,6 +32,15 @@
             }
             Wynik.Text = "Luźny wyniczek mordeczko: " + diceRoll.ToString();
         }
+
+        private void CheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            RadioButton rb = (RadioButton)sender;
+            int maxRoll = int.Parse((string)rb.Value);
+            string fileName = "kk" + maxRoll + ".jpg";
+            kosciZDJ.Source = fileName;
+            Wynik.Text = String.Empty;
+        }
     }
 
 }
